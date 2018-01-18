@@ -39,8 +39,6 @@ if (typeof module == "undefined") {
 }
 
 module.exports = function () {
-    getXMLHttpRequest = getxmlhttprequest;
-
     let exports = new Object();
     exports.poll = poll;
 
