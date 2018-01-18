@@ -1,4 +1,6 @@
-var Promise = require('native-promise-only');
+if (typeof Promise === "undefined") {
+    var Promise = require('native-promise-only');
+}
 
 // https://github.com/allain/promise-poll/blob/master/index.js - allain (Sept 18, 2015), 1/18/2018
 function poll(predicate, timeout, interval) {
