@@ -1,6 +1,7 @@
 # promise-poll
 
 Provides a function which resolves a promise which resolves within a given timeout if its predicate returns something truthy.
+This version no longer uses setInterval, which has problems. It now only calls setTimer.
 
 ## Installation
 
