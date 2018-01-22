@@ -1,7 +1,7 @@
 # promise-poll
 
 Provides a function which resolves a promise which resolves within a given timeout if its predicate returns something truthy.
-This version no longer uses setInterval, which has problems. It now only calls setTimer.
+This version no longer uses setInterval, which has problems. It now only calls setTimer. Timeout is now also optional.
 
 ## Installation
 
@@ -33,8 +33,8 @@ function rollOddDice() {
 #### predicate
 a function which returns a truthy values, whose first truthy value will be used to resolve the Promise
 
-#### timeout
+#### timeout (optional)
 the number of milliseconds to wait before declaring the Promise rejected
 
-#### interval
+#### interval (optional)
 the number of milliseconds between attempts to test the predicate
