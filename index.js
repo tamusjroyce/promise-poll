@@ -38,9 +38,4 @@ if (typeof module == "undefined") {
     window.module = {};
 }
 
-module.exports = function () {
-    let exports = new Object();
-    exports.poll = poll;
-
-    return exports;
-}
+module.exports = { poll };
