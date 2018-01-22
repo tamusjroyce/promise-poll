@@ -28,7 +28,7 @@ function rollOddDice() {
 
 ## API
 
-### poll(predicate, timeout[, interval:ms]) : Promise
+### poll(predicate, [timeout, interval:ms]) : Promise
 
 #### predicate
 a function which returns a truthy values, whose first truthy value will be used to resolve the Promise
